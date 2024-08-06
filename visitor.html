@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Visitor Data</title>
+    <script>
+        // JavaScript to display visitor data
+        window.onload = function() {
+            var browser_name = "<?php echo isset($browser_name) ? $browser_name : ''; ?>";
+            var type = "<?php echo isset($type) ? $type : ''; ?>";
+            var os = "<?php echo isset($os) ? $os : ''; ?>";
+            var added_on = "<?php echo isset($added_on) ? $added_on : ''; ?>";
+
+            // Display data in paragraph tags
+            document.getElementById("browser").textContent = "Browser: " + browser_name;
+            document.getElementById("type").textContent = "Type: " + type;
+            document.getElementById("os").textContent = "OS: " + os;
+            document.getElementById("added_on").textContent = "Added On: " + added_on;
+        };
+    </script>
+</head>
+<body>
+    <h2>Visitor Information</h2>
+    <p id="browser"></p>
+    <p id="type"></p>
+    <p id="os"></p>
+    <p id="added_on"></p>
+</body>
+</html>
