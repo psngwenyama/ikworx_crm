@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Dashboard</title>
+</head>
+<body>
+    <h1>Sales Dashboard</h1>
+    <p>Active Deals Revenue: R<span id="active-deals-revenue"></span></p>
+    <p>Won Deals Average Revenue: R<span id="won-deals-avg-revenue"></span></p>
+    <p>Won Deals Total Revenue: R<span id="won-deals-total-revenue"></span></p>
+
+    <script>
+        function fetchDealsData() {
+            fetch('get_deals_data.php')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('active-deals-revenue').innerText = data.active_deals_revenue;
+                    document.getElementById('won-deals-avg-revenue').innerText = data.won_deals_avg_revenue;
+                    document.getElementById('won-deals-total-revenue').innerText = data.won_deals_total_revenue;
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        }
+
+        window.onload = fetchDealsData;
+    </script>
+</body>
+</html>

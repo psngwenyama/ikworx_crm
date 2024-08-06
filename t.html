@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tenders Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+  <style>
+    /* Add your custom styles here */
+    .body {
+      padding: 20px;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo_item">
+    <i class="bx bx-menu" id="sidebarOpen"></i>
+    <img src="images/IKWORX LOGO.png" alt="">
+  </div>
+
+  <div class="search_bar">
+    <input type="text" placeholder="Search" />
+  </div>
+
+  <div class="navbar_content">
+    <i class="bi bi-grid"></i>
+    <i class='bx bx-sun' id="darkLight"></i>
+    <i class='bx bx-bell'></i>
+    <img src="" alt="" class="profile" />
+  </div>
+</nav>
+
+<nav class="sidebar">
+  <div class="menu_content">
+    <ul class="menu_items">
+      <!-- Sidebar menu items -->
+      <li class="item">
+        <a href="#" class="nav_link">
+          <span class="navlink_icon">
+            <i class="bx bx-home-alt"></i>
+          </span>
+          <span class="navlink">Home</span>
+        </a>
+      </li>
+
+      <li class="item">
+        <a href="#" class="nav_link">
+          <span class="navlink_icon">
+            <i class="bx bx-grid-alt"></i>
+          </span>
+          <span class="navlink">Overview</span>
+        </a>
+      </li>
+
+      <li class="item">
+        <a href="#" class="nav_link">
+          <span class="navlink_icon">
+            <i class="bx bx-line-chart"></i>
+          </span>
+          <span class="navlink">Accounts</span>
+        </a>
+      </li>
+
+      <!-- Tenders link -->
+      <li class="item">
+        <a href="#" class="nav_link">
+          <span class="navlink_icon">
+            <i class="bx bx-receipt"></i>
+          </span>
+          <span class="navlink">Tenders</span>
+        </a>
+      </li>
+
+      <li class="item">
+        <a href="#" class="nav_link">
+          <span class="navlink_icon">
+            <i class="bx bxs-contact"></i>
+          </span>
+          <span class="navlink">Contacts</span>
+        </a>
+      </li>
+
+      <li class="item">
+        <a href="#" class="nav_link">
+          <span class="navlink_icon">
+            <i class="bx bx-cloud-upload"></i>
+          </span>
+          <span class="navlink">Upload new</span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Additional sidebar menu items -->
+    <ul class="menu_items">
+      <li class="item">
+        <a href="#" class="nav_link">
+          <span class="navlink_icon">
+            <i class="bx bx-flag"></i>
+          </span>
+          <span class="navlink">Notice board</span>
+        </a>
+      </li>
+      <li class="item">
+        <a href="#" class="nav_link">
+          <span class="navlink_icon">
+            <i class="bx bx-medal"></i>
+          </span>
+          <span class="navlink">Award</span>
+        </a>
+      </li>
+      <li class="item">
+        <a href="#" class="nav_link">
+          <span class="navlink_icon">
+            <i class="bx bx-cog"></i>
+          </span>
+          <span class="navlink">Setting</span>
+        </a>
+      </li>
+      <li class="item">
+        <a href="#" class="nav_link">
+          <span class="navlink_icon">
+            <i class="bx bx-layer"></i>
+          </span>
+          <span class="navlink">Features</span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Sidebar Open / Close -->
+    <div class="bottom_content">
+      <div class="bottom expand_sidebar">
+        <span> Expand</span>
+        <i class='bx bx-log-in'></i>
+      </div>
+      <div class="bottom collapse_sidebar">
+        <span> Collapse</span>
+        <i class='bx bx-log-out'></i>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="body">
+  <div class="container">
+    <div class="row">
+      <!-- Cards and charts section -->
+      <div class="col-md-7">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-1">
+              <div class="icon-living">
+                <i class="bx bx-user"></i>
+              </div>
+              <h5 id="total-tenders"></h5>
+              <span class="tender-info">Total tenders</span>
+              <small>last week</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-2">
+              <div class="icon-living">
+                <i class="bx bx-user"></i>
+              </div>
+              <h5 id="submitted-tenders"></h5>
+              <span class="tender-info">tender submitted</span>
+              <small> last week</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-3">
+              <div class="icon-living">
+                <i class="bx bx-user"></i>
+              </div>
+              <h5 id="pending-tenders"></h5>
+              <span class="tender-info">pending tenders</span>
+              <small>  last week</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="card">
+          <div class="chart">
+            <canvas id="tenderChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tables section -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <header>
+            <div class="header-left">
+              <div class="main-table">
+                <span>Tenders Table</span>
+                <span class="dropdown-arrow"><i class="bx bx-chevron-down"></i></span>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Main Table</a></li>
+                  <li><a href="#">Another Table</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-right">
+              <button class="btn btn-primary" id="newDealBtn" data-bs-toggle="modal" data-bs-target="#newTenderModal">
+                <span><i class="bx bx-plus-circle"></i> New Tender</span>
+              </button>
+              <div class="search">
+                <span><i class="bx bx-search"></i> Search</span>
+              </div>
+              <div class="person-icon">
+                <span><i class="bx bx-user-circle"></i> Person</span>
+              </div>
+              <div class="filter">
+                <span><i class="bx bx-filter"></i> Filter</span>
+              </div>
+              <div class="sort">
+                <span><i class="bx bx-sort-alt-2"></i> Sort</span>
+              </div>
+            </div>
+          </header>
+          <table class="table table-striped" style="width: 100%">
+            <thead>
+              <tr>
+                <th>Tender reference</th>
+                <th>Tender name</th>
+                <th>Application date</th>
+                <th>Closing date</th>
+                <th>Contact person</th>
+                <th>Contact name</th>
+                <th>Need Briefing</th>
+                <th>Email or Hand Delivered</th>
+                <th>Owner</th>
+                <th>Comment</th>
+              </tr>
+            </thead>
+            <tbody id="contactsBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for New Tender -->
+<div class="modal fade" id="newTenderModal" tabindex="-1" aria-labelledby="newTenderModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newTenderModalLabel">New Tender</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="newTenderForm">
+          <div class="mb-3">
+            <label for="tender_reference" class="form-label">Tender Reference</label>
+            <input type="text" class="form-control" id="tender_reference" name="tender_reference" required>
+          </div>
+          <div class="mb-3">
+            <label for="tender_name" class="form-label">Tender Name</label>
+            <input type="text" class="form-control" id="tender_name" name="tender_name" required>
+          </div>
+          <div class="mb-3">
+            <label for="application_date" class="form-label">Application Date</label>
+            <input type="date" class="form-control" id="application_date" name="application_date" required>
+          </div>
+          <div class="mb-3">
+            <label for="closing_date" class="form-label">Closing Date</label>
+            <input type="date" class="form-control" id="closing_date" name="closing_date" required>
+          </div>
+          <div class="mb-3">
+            <label for="contact_person" class="form-label">Contact Person</label>
+            <input type="text" class="form-control" id="contact_person" name="contact_person" required>
+          </div>
+          <div class="mb-3">
+            <label for="contact_name" class="form-label">Contact Name</label>
+            <input type="text" class="form-control" id="contact_name" name="contact_name" required>
+          </div>
+          <div class="mb-3">
+            <label for="need_briefing" class="form-label">Need Briefing</label>
+            <select class="form-select" id="need_briefing" name="need_briefing" required>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="submission_type" class="form-label">Submission Type</label>
+            <select class="form-select" id="submission_type" name="submission_type" required>
+              <option value="Email">Email</option>
+              <option value="Hand Delivered">Hand Delivered</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="owner" class="form-label">Owner</label>
+            <input type="text" class="form-control" id="owner" name="owner" required>
+          </div>
+          <div class="mb-3">
+            <label for="comment" class="form-label">Comment</label>
+            <textarea class="form-control" id="comment" name="comment"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-af6SrtfW9f+CxC7jj1stS3OZa5k/QbCkNojOt2qkiGlx1Kbl5oosFp5pGnlpxLCo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-Y3wdNJv8d2RFyHjl+tkcUkPha2K0akg83u/04ACF1d7XJYTG5WjGiW6aISDyPE7s" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Display modal when clicking New Tender button
+    document.getElementById("newDealBtn").addEventListener("click", function () {
+      $('#newTenderModal').modal('show');
+    });
+
+    // Handle form submission
+    document.getElementById("newTenderForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const formData = new FormData(this);
+
+      fetch('insert_tender.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Optionally handle response data
+        console.log('Success:', data);
+        $('#newTenderModal').modal('hide'); // Hide modal after successful submission
+        // You may refresh the table here or show a success message
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        // Handle error, show error message, etc.
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
