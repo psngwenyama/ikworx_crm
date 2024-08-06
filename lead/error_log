@@ -1,0 +1,2 @@
+[25-Jul-2024 08:47:15 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ikwortgw/public_html/crm/lead/save_lead.php on line 69
+[25-Jul-2024 08:50:30 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ikwortgw/public_html/crm/lead/save_lead.php on line 69
