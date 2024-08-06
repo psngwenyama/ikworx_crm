@@ -1,0 +1,48 @@
+[20-Jul-2024 15:21:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_deals.php on line 11
+[20-Jul-2024 15:21:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_deals.php on line 12
+[20-Jul-2024 15:21:09 UTC] SQL Query: SELECT * FROM deals
+[22-Jul-2024 08:36:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_tenders.php on line 11
+[22-Jul-2024 08:36:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_tenders.php on line 12
+[22-Jul-2024 08:36:12 UTC] SQL Query: SELECT * FROM tenders
+[22-Jul-2024 08:36:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_tenders.php on line 11
+[22-Jul-2024 08:36:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_tenders.php on line 12
+[22-Jul-2024 08:36:36 UTC] SQL Query: SELECT * FROM tenders
+[22-Jul-2024 08:51:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_tenders.php on line 11
+[22-Jul-2024 08:51:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_tenders.php on line 12
+[22-Jul-2024 08:51:31 UTC] SQL Query: SELECT * FROM tenders
+[22-Jul-2024 13:52:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_tenders.php on line 11
+[22-Jul-2024 13:52:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_tenders.php on line 12
+[22-Jul-2024 13:52:19 UTC] SQL Query: SELECT * FROM tenders
+[22-Jul-2024 13:52:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_tenders.php on line 11
+[22-Jul-2024 13:52:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_tenders.php on line 12
+[22-Jul-2024 13:52:40 UTC] SQL Query: SELECT * FROM tenders
+[22-Jul-2024 13:52:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_leads.php on line 11
+[22-Jul-2024 13:52:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_leads.php on line 12
+[22-Jul-2024 13:52:49 UTC] SQL Query: SELECT * FROM leads
+[23-Jul-2024 08:03:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_leads.php on line 11
+[23-Jul-2024 08:03:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_leads.php on line 12
+[23-Jul-2024 08:03:06 UTC] SQL Query: SELECT * FROM leads
+[23-Jul-2024 09:42:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_deals.php on line 11
+[23-Jul-2024 09:42:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_deals.php on line 12
+[23-Jul-2024 09:42:31 UTC] SQL Query: SELECT * FROM deals
+[23-Jul-2024 12:11:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_deals.php on line 11
+[23-Jul-2024 12:11:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_deals.php on line 12
+[23-Jul-2024 12:11:00 UTC] SQL Query: SELECT * FROM deals
+[23-Jul-2024 12:11:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_deals.php on line 11
+[23-Jul-2024 12:11:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_deals.php on line 12
+[23-Jul-2024 12:11:20 UTC] SQL Query: SELECT * FROM deals
+[24-Jul-2024 06:47:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_leads.php on line 11
+[24-Jul-2024 06:47:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_leads.php on line 12
+[24-Jul-2024 06:47:30 UTC] SQL Query: SELECT * FROM leads
+[24-Jul-2024 10:25:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_leads.php on line 11
+[24-Jul-2024 10:25:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_leads.php on line 12
+[24-Jul-2024 10:25:55 UTC] SQL Query: SELECT * FROM leads
+[24-Jul-2024 10:26:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_leads.php on line 11
+[24-Jul-2024 10:26:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ikwortgw/public_html/crm/connection.php:15) in /home/ikwortgw/public_html/crm/export_leads.php on line 12
+[24-Jul-2024 10:26:09 UTC] SQL Query: SELECT * FROM leads
+[30-Jul-2024 10:27:41 UTC] PHP Notice:  Undefined variable: db_username in /home/ikwortgw/public_html/crm/login.php on line 14
+[30-Jul-2024 10:27:41 UTC] PHP Notice:  Undefined variable: db_password in /home/ikwortgw/public_html/crm/login.php on line 14
+[30-Jul-2024 10:27:41 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/ikwortgw/public_html/crm/login.php on line 14
+[30-Jul-2024 10:28:48 UTC] PHP Notice:  Undefined variable: db_username in /home/ikwortgw/public_html/crm/login.php on line 14
+[30-Jul-2024 10:28:48 UTC] PHP Notice:  Undefined variable: db_password in /home/ikwortgw/public_html/crm/login.php on line 14
+[30-Jul-2024 10:28:48 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/ikwortgw/public_html/crm/login.php on line 14
